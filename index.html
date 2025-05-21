@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat con Botpress</title>
+  
+    <script src="https://cdn.botpress.cloud/webchat/v2.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/04/21/18/20250421180336-VB1YALXG.js"></script>
+    
+</head>
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('userId');
+    alert("entraa");
+    window.botpressWebChat.init({
+      host: "https://cdn.botpress.cloud/webchat/v1",
+      botId: "23a31b04-6bd6-460f-b8eb-a44261f3ef8d",
+      clientId: "e2160406-4b2a-46b8-8921-4d10c818a6fd",
+      extraData: {
+        userId: userId
+      }
+    });
+  </script>
+</body>
+</html>
